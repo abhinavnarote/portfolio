@@ -1,161 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Vijay Narote - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!DOCTYPE HTML>
-<!--
--->
-<html>
-	<head>
-		<title>PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Abhinav V. Narote<br />
-						</h1>
-						<p>Skilled in Python, R, Tableau, and machine learning, I specialize in transforming complex datasets into actionable insights. With expertise in NLP, regression modeling, and predictive analytics, I design efficient data pipelines and interactive dashboards to drive strategic decisions. My focus is on delivering innovative solutions tailored to diverse business needs.
+        .portfolio-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
 
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 40px;
+        }
 
- <a href="https://www.linkedin.com/in/pranavi-lokhande/">Linkdln</a> 
-						
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">PORTFOLIO</a>
-					</header>
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #1e3c72;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">PROJECTS</a></li>
-							<li><a href="generic.html">ABOUT MYSELF</a></li>
-				
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="https://www.linkedin.com/in/pranavi-lokhande/" class="icon brands alt fa-linkedin"><span class="label">Linkedln</span></a></li>
-									<li><a href="https://github.com/dashboard" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        .header-info h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        .header-info .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">September 16 - December 15 2024</span>
-									<h2><a href="https://github.com/Pranavilokhande/NLP-MODEL-/tree/main">Machine Learning Analysis<br /><br />
-									</a></h2>
-									<p>Developed an NLP-based sentiment analysis model to classify feedback as positive or negative, enabling streamlined insights for administrative users to enhance decision-making.<br />
-									
-									</p>
-								</header>
-								<a href="https://github.com/Pranavilokhande/NLP-MODEL-/tree/main" class="image main"><img src="images/NLP.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/Pranavilokhande/NLP-MODEL-/tree/main" class="button large">View Project</a></li>
-								</ul>
-							</article>
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">May 20, 2024</span>
-										<h2><a href="https://public.tableau.com/app/profile/pranavi.lokhande/vizzes">DATA VISUALIZATION IN TABLEAU<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/pranavi.lokhande/vizzes" class="image fit"><img src="images/Tableau.jpg" alt="" /></a>
-									<p>Unveiled insights into Airbnb pricing, demand, and trends across neighborhoods to empower data-driven decision-making</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/pranavi.lokhande/vizzes" class="button">VIEW PROJECT</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">March 29, 2024 </span>
-										<h2><a href="https://github.com/Pranavilokhande/R-Studio-">ELECTRIC VEHICLE ANALYSIS<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/Pranavilokhande/R-Studio-" class="image fit"><img src="images/EV.jpg" alt="" /></a>
-									<p>Analyzing Electric Vehicle Dataset Uisng R studio</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Pranavilokhande/R-Studio-" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="https://github.com/Pranavilokhande/SQL">Solving Muder Mystery Using SQL <br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/Pranavilokhande/SQL" class="image fit"><img src="images/Sql.jpg" alt="" /></a>
-									<p>A group Project Done Using SQL To find the real culprit .</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Pranavilokhande/SQL" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">August 11, 2024</span>
-										<h2><a href="https://github.com/Pranavilokhande/Python-">Text Classification<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/Pranavilokhande/Python-" class="image fit"><img src="images/Python.jpg" alt="" /></a>
-									<p>Identifing the accuracy of text Containing in the dataset using Python</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Pranavilokhande/Python-" class="button">View Project</a></li>
-									</ul>
-								</article>
+        .contact-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
 
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>Boston,MA 02121</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+1 (617)870-1430</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">pranulokhande7@gmail.com lokhande.pr@northeastern.edu</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-								    <li><a href="https://www.linkedin.com/in/pranavi-lokhande/" class="icon brands alt fa-linkedin"><span class="label">Linkedln</span></a></li>
-									<li><a href="https://github.com/dashboard" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Portfolio</li><li>Design: <a href="https://html5up.net">Portfolio</a></li></ul>
-					</div>
+        .contact-details a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
 
-			</div>
+        .content {
+            padding: 40px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .section {
+            margin-bottom: 40px;
+        }
 
-	</body>
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1e3c72;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            font-size: 1.2em;
+        }
+
+        .objective {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #1e3c72;
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .education-item h3 {
+            color: #1e3c72;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .education-item .degree {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .education-item .institution {
+            color: #666;
+            font-style: italic;
+        }
+
+        .skills-category {
+            margin-bottom: 25px;
+        }
+
+        .skills-category h3 {
+            color: #1e3c72;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .experience-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .experience-header h3 {
+            color: #1e3c72;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .experience-header .position {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .experience-header .duration {
+            color: #666;
+            font-size: 0.95em;
+            white-space: nowrap;
+        }
+
+        .experience-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-item li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .experience-item li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        .earlier-experience {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .earlier-experience h3 {
+            color: #1e3c72;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .earlier-experience p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-info h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio-card">
+            <!-- Header Section -->
+            <div class="header">
+                <div class="header-content">
+                    <div class="profile-image">AVN</div>
+                    <div class="header-info">
+                        <h1>Abhinav Vijay Narote</h1>
+                        <div class="subtitle">Data Analytics Professional | 18+ Years Experience</div>
+                        <div class="contact-details">
+                            <span>📍 Phoenix, AZ</span>
+                            <span>📞 <a href="tel:+17543049608">+1 (754)-304-9608</a></span>
+                            <span>✉️ <a href="mailto:abhinavnarote@gmail.com">abhinavnarote@gmail.com</a></span>
+                            <span>🔗 <a href="https://www.linkedin.com/in/abhinav-narote-37635431" target="_blank">LinkedIn Profile</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="content">
+                <!-- Objective -->
+                <section class="section">
+                    <h2><span class="section-icon">🎯</span>Objective</h2>
+                    <div class="objective">
+                        Accomplished Data Analytics professional with 18+ years of experience leveraging data-driven insights to optimize, streamline, and enhance performance across telecom and technology sectors. Currently pursuing an M.S. in Data Science and AI in the U.S., seeking an internship to apply, develop, and implement Python, Power BI, Tableau, and machine learning techniques for predictive modeling and business intelligence.
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="section">
+                    <h2><span class="section-icon">🎓</span>Education</h2>
+                    <div class="education-item">
+                        <div class="degree">Master of Science in Data Science and Artificial Intelligence</div>
+                        <div class="institution">Florida Atlantic University, Boca Raton, FL</div>
+                        <div style="color: #666; margin-top: 5px;">Expected: December 2026</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">Bachelor of Engineering in Electronics</div>
+                        <div class="institution">Datta Meghe College of Engineering, Mumbai University, India</div>
+                        <div style="color: #666; margin-top: 5px;">May 2005</div>
+                    </div>
+                </section>
+
+                <!-- Core Skills -->
+                <section class="section">
+                    <h2><span class="section-icon">💼</span>Core Skills</h2>
+                    <div class="skills-category">
+                        <h3>Data Analytics & Visualization</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Machine Learning & AI</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Regression</span>
+                            <span class="skill-tag">Classification</span>
+                            <span class="skill-tag">Clustering</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Telecom Analytics</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">5G/LTE Optimization</span>
+                            <span class="skill-tag">KPI Modeling</span>
+                            <span class="skill-tag">Capacity Forecasting</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Atoll</span>
+                            <span class="skill-tag">Mentum Planet EV</span>
+                            <span class="skill-tag">ACTIX</span>
+                            <span class="skill-tag">MapInfo</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Business Skills</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Data Storytelling</span>
+                            <span class="skill-tag">Forecasting</span>
+                            <span class="skill-tag">Financial Modeling</span>
+                            <span class="skill-tag">Cross-Functional Collaboration</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Experience -->
+                <section class="section">
+                    <h2><span class="section-icon">💻</span>Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Reliance Jio Infocom Ltd.</h3>
+                                <div class="position">Manager – Network Planning (5G & LTE, Data Analytics)</div>
+                                <div style="color: #666; font-size: 0.9em;">Mumbai, India</div>
+                            </div>
+                            <div class="duration">2016 – 2023</div>
+                        </div>
+                        <ul>
+                            <li>Directed network planning and KPI analytics for 5G and LTE projects serving 500M+ users.</li>
+                            <li>Formulated Excel-based predictive models to forecast subscriber growth and network capacity, aiming to cover 95% of India's population.</li>
+                            <li>Engineered Greenfield radio network designs across seven Indian states including Mumbai, enhancing performance and customer experience by leveraging specialized tools for Model Tuning (Mentum Planet EV, Atoll).</li>
+                            <li>Collaborated with finance and engineering teams to align analytics with strategic goals.</li>
+                            <li>Designed and maintained executive dashboards and KPI reports using Tableau and Power BI to translate complex data into actionable insights.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Ericsson India Pvt. Ltd.</h3>
+                                <div class="position">Specialist – Network Consulting (Data & RF Analytics)</div>
+                                <div style="color: #666; font-size: 0.9em;">Mumbai, India</div>
+                            </div>
+                            <div class="duration">2011 – 2016</div>
+                        </div>
+                        <ul>
+                            <li>Delivered performance optimization and analytics consulting for Tier-1 operator Idea Cellular, now merged with Vodafone Wireless.</li>
+                            <li>Led a team of six engineers and facilitated strategic meetings with client leadership to streamline daily operations.</li>
+                            <li>Built and standardized KPI dashboards of 31 parameters to track and improve network performance.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Earlier Experience -->
+                <section class="section">
+                    <h2><span class="section-icon">📋</span>Earlier Experience</h2>
+                    <div class="earlier-experience">
+                        <h3>2005 – 2011</h3>
+                        <p>
+                            <strong>Videocon Telecommunications | Essar Teleholdings | Tech Mahindra | Tata Teleservices</strong>
+                        </p>
+                        <ul style="margin-top: 15px;">
+                            <li>Oversaw wireless network planning and managed multi-region rollouts across India, Cambodia, Kenya, and Malaysia.</li>
+                            <li>Implemented capacity forecasting models and executed performance improvement initiatives aligned with business goals.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
